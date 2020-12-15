@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FON HighTech| Services</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html" style="background-color: #333; color: #ccc;">Services</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Top Container -->
+        <section class="top-container">
+            <header class="showcase-tri">
+
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Članstvo u HighTech-u</h4>
+                <p class="price">20 &euro; /mesecu</p>
+                <a href="services.html" class="btn">Učlani se...</a>
+            </div>
+            <div class="top-box top-box-b">
+                <h4>Pro članstvo</h4>
+                <p class="price">50 &euro; /mesecu</p>
+                <a href="services.html" class="btn">Učlani se...</a>
+            </div>
+        </section>
+
+        <!-- Boxes Section -->
+        <section class="boxes">
+            <div class="box">
+                <h3>Analytics</h3>
+                <br>
+                <p>5 &euro; /mesecu</p>
+            </div>
+            <div class="box">
+                <h3>Marketing</h3>
+                <br>
+                <p>10 &euro; /mesecu</p>
+            </div>
+            <div class="box">
+                <h3>Development</h3>
+                <br>
+                <p>10 &euro; /mesecu</p>
+            </div>
+            <div class="box">
+                <h3>Support</h3>
+                <br>
+                <p>5 &euro; /mesecu</p>
+            </div>
+        </section>
+        <h1 style="text-align: center;">Basic vs Pro paket</h1>
+        <table>
+            <tr>
+                <th style="width:50%">Features</th>
+                <th>Basic</th>
+                <th>Pro</th>
+            </tr>
+            <tr>
+                <td>Svi programi su dostupni</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Mogućnost online učenja i napredovanja</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Tehnička podrška na raspolaganju</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Reklamiranje projekata</td>
+                <td><i class="fa fa-remove"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+                <td>Konsultacije za razvoj projekata</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+            </tr>
+        </table>
+
+        <!-- Footer -->
+        <footer>
+
+            <p id="godina"></p>
+        </footer>
+    </div>
+
+    <script>
+        let datum = new Date();
+        document.getElementById('godina').innerHTML = datum;
+    </script>
+</body>
+
+</html>

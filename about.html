@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/galerija.css">
+    <title>FON HighTech| About</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" style="background-color: #333; color: #ccc;">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Top Container -->
+        <section class="top-container">
+            <header class="showcase-dva">
+                <h1>O nama</h1>
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Članstvo u HighTech-u</h4>
+                <p class="price">20 &euro; /mesecu</p>
+                <a href="services.html" class="btn">Učlani se...</a>
+            </div>
+            <div class="top-box top-box-b">
+                <h4>Pro članstvo</h4>
+                <p class="price">50 &euro; /mesecu</p>
+                <a href="services.html" class="btn">Učlani se...</a>
+            </div>
+        </section>
+
+
+        <!-- Info Section -->
+        <section class="info">
+            <img src="./img/slika11.png" alt="">
+            <div>
+                <h2>FON HighTech</h2>
+                <p>Mi smo grupa studenata koja razvija aplikaciju koja će promeniti budućnost. Učlani se u FON HighTech Solutions i postani ekspert za razvijanje malih biznisa!
+                </p>
+                <button id="dugme" class="btn">Pritisni me i saznaj više...</button>
+                <p class="pokreni" style="display: none;">U okviru školovanja FON HighTech programu besplatno dobijate i jedinstveni paket profesionalnih veština-Personal Development Program koji će Vam osigurati napredak u karijeri i izdvojiti Vas kao lidera među stručnjacima u Vašem poslu.</p>
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./img/slika1.jpg" style="width:100%">
+                <div class="text">Marketing</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./img/slika2.png" style="width:100%">
+                <div class="text">Analytics</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./img/slika3.png" style="width:100%">
+                <div class="text">Support</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+
+            <p id="godina"></p>
+        </footer>
+    </div>
+
+    <script>
+        let datum = new Date();
+        document.getElementById('godina').innerHTML = datum;
+    </script>
+    <!---jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#dugme").click(function() {
+                $(".pokreni").show(5000);
+            });
+        });
+    </script>
+    <script src="./js/galerija.js"></script>
+</body>
+
+</html>
